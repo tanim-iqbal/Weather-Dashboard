@@ -55,3 +55,16 @@ li {
     clear: both;
     display: table;
   }
+
+  .card {
+    border: black solid 3px; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .container-md {
+    border: solid black;
+    padding: 10px;
+  }
