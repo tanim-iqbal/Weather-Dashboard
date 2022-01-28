@@ -43,6 +43,7 @@ function getApi(citySearch) {
         return response.json();
       })
       .then(function (forcastData) { 
+        
 
         console.log (forcastData)
         //This is the forecast info for the 5 days
@@ -79,13 +80,9 @@ todoForm.addEventListener("submit", function(event) {
   if (citySearch === "") {
     return;
   }
-  // Add new todoText to todos array, clear the input
-  //todos.push(todoText);
-  todoInput.value = "";
-  // Store updated todos in localStorage, re-render the list
-  //storeTodos();
-  //renderTodos();
   getApi(citySearch)
 });
 
-
+//Convertion from kelvin to fahrenheit
+//var kel2far = ((forcastData.daily[i].temp.day-273.15)*1.8)+32
+// console.log (kel2far)
