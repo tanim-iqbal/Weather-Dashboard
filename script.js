@@ -24,7 +24,7 @@ var key = '90a759efbdc05d8004d62a39a8c185c9'
 
 function getApi(citySearch) {
 
-  var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?q='+citySearch+'&appid=90a759efbdc05d8004d62a39a8c185c9'
+  var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?q='+citySearch+'&appid=90a759efbdc05d8004d62a39a8c185c9&units=imperial&'
   console.log (requestUrl)
 
   fetch(requestUrl)
@@ -35,7 +35,7 @@ function getApi(citySearch) {
       var lat = data.city.coord.lat
       console.log (lat)
       var lon = data.city.coord.lon
-      var mainUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+'&exclude=minutely&appid='+key;
+      var mainUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+'&exclude=minutely&appid='+key+'&units=imperial&';
       console.log (lon)
 //---------------------------------------------------------------------------
   fetch(mainUrl)
