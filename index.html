@@ -4,50 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
 </head>
 <body>
-      <div class="p-4 text-center text-white bg-primary">
-        <h1>Weather App</h1>
-        <form id="todo-form" method="POST">
-          <label for="todo-text">Type your city </label>
-          <input type="text" placeholder="City Search" name="todo-text" id="todo-text" />
-        </form>
-    </div>     
-    <div>
-    <div class="col-12 border border-dark" style="background-color:white; padding: 15px;">
-        <ul id=dayList>
-            <li id=temp>Temperature</li>
-            <li id=wind>Wind</li>
-            <li id=humidity>Humidity</li>
-        </ul>
-        <ul>
-            <li id=temp1>Temperature</li>
-            <li id=wind1>Wind</li>
-            <li id=humidity1>Humidity</li>
-        </ul>
-        <ul>
-            <li id=temp2>Temperature</li>
-            <li id=wind2>Wind</li>
-            <li id=humidity2>Humidity</li>
-        </ul>
-        <ul>
-            <li id=temp3>Temperature</li>
-            <li id=wind3>Wind</li>
-            <li id=humidity3>Humidity</li>
-        </ul>
-        <ul>
-            <li id=temp4>Temperature</li>
-            <li id=wind4>Wind</li>
-            <li id=humidity4>Humidity</li>
-        </ul>
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Tuesday, 8 Feburary
+                </div>
+
+                <div class="others" id="current-weather-items">
+                    
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">EST</div>
+                <div id="city" class="city">ATL</div>
+            </div>
+        </div>
+
+        
     </div>
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="others" id="other">
+                <div class="day">Monday</div>
+                <div class="temp">Night -25.6&#176; F</div>
+                <div class="temp">Day -35.6&#176; F</div>
+            </div>
+           
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">Tuesday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night -25.6&#176; C</div>
+                <div class="temp">Day -35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wednesday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night -25.6&#176; C</div>
+                <div class="temp">Day -35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thursday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night -25.6&#176; C</div>
+                <div class="temp">Day -35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Friday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night -25.6&#176; C</div>
+                <div class="temp">Day -35.6&#176; C</div>
+            </div>
+        </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
