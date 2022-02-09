@@ -10,7 +10,7 @@ A simple weather app that allows you to search any city and display a 5-day forc
 
 # Snap Shot
 
-![Screen Shot 2022-02-09 at 1 42 13 AM](https://user-images.githubusercontent.com/89047977/153136068-67e0a454-56bb-4c77-9139-e2c990418988.png)
+![Screen Shot 2022-02-09 at 3 29 36 AM](https://user-images.githubusercontent.com/89047977/153156019-0bd54bb5-bed5-4584-8f0a-2a530e421687.png)
 
 # Live Site Link
 
